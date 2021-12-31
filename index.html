@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="shortcut" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Phrase Cleaner</title>
+  <meta charset="utf-8">
+  <script src="script.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <header>
+    <img class="logo" width="54px" src="Logo.png" alt="Logo">
+    <h1 id="titulo">Phrase Cleaner</h1>
+  </header>
+
+  <main>
+    <div id="counteudo">
+      <h2 class="subtitulo">Limpe palavrões de suas frases ;)</h2>
+      <h4 class="subtitulo" id="digite">Digite a sua frase</h4>
+      <textarea maxlength="255" id="text" name="text" rows="6" cols="80" oninput="countText()"></textarea>
+      <div id="cont">
+        <label id="countPalavroes" style="display: none;"><span class="verde" id="res"> </span>
+          <span style="float: left;">&nbspforam removidos :)</span></label>
+        <label for="characters"><span id="characters">0</span> / 255 caracteres </label>
+      </div>
+      <button id="botao" type="button" name="limpar" onclick="acao()">Limpar frase</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Copyright 2021 - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+
+</html>
